@@ -42,9 +42,9 @@ class LandScape:
     
 if __name__ == "__main__":
     foo = LandScape(10,10,10)
-    foo.add_charges([[5,5,0,-1]])
+    foo.add_charges([[5,5,0,-1],[10,10,0,-1]])
     foo.plot_charge_locations()
-    X = np.arange(0,10,.1)
-    Y = np.arange(0,10,.1)
-    foo.plot_potential(X,Y,-1)
+    X = np.arange(0,15,1)
+    Y = np.arange(0,15,1)
+    foo.plot_potential(X,Y,-2)
     plt.show()
