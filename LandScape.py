@@ -39,6 +39,12 @@ class LandScape:
         
 
 class ChargeCube:
+'''one dilema here is that charge is uniform distributed..
+
+Im thinking that one way to fix this would be to feed in some 'center of body' coord that charge could grow as it is further away,
+so the density of point charges would still be unform but the charge would increase, which should have roughly the same effect as increasing
+charge density at the parts of the shape that stick out more'''
+
     def __init__(self, x1,y1,z1, x2,y2,z2,q = -1,step = 1):
         #there might be clever numpy magic to vectorize this but its speed is pretty irrelevant compatered to potential
         
